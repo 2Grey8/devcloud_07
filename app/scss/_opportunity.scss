@@ -1,0 +1,230 @@
+.opportunity{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 160rem;
+    margin: 0 auto;
+    margin-bottom: 23rem;
+    position: relative;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__title{
+    display: block;
+    width: 782px;
+    margin: 0 auto;
+    margin-bottom: 23.5rem;
+    text-align: center;
+
+    font-family: Open "Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0.045em;
+    color: #000000;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+  }
+
+  &__wrap{
+    display: block;
+    width: 160rem;
+    margin: 0 auto;
+  }
+
+  &__group{
+    width: 150rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+    @include respond(phone){
+      width: 60rem;
+      display: block;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+    }
+
+    &_2,
+    &_4{
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__list{
+    display: block;
+    width: 63rem;
+    padding-top: 4.6rem;
+    padding-left: 12.3rem;
+    padding-bottom: 2.1rem;
+    padding-right: 5.6rem;
+    text-align: left;
+    position: relative;
+
+    font-family: Open "Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    background: #000;
+    opacity: .9;
+
+    &_1::before,
+    &_3::before,
+    &_5::before{
+      content: "";
+      border: 24px solid transparent;
+      border-left: 24px solid #000;
+      position: absolute;
+      top: 18rem;
+      left: 63rem;
+    }
+
+    &_3::before{
+      top: 15rem;
+    }
+
+    &_5::before{
+      top: 11rem;
+    }
+
+    &_2::before,
+    &_4::before{
+      content: "";
+      border: 24px solid transparent;
+      border-right: 24px solid #000;
+      position: absolute;
+      top: 17rem;
+      right: 63rem;
+    }
+
+    &_4::before{
+      top: 19rem;
+    }
+
+    &::after{
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+    }
+
+    &_1::after{
+      width: 260px;
+      height: 260px;
+      background-image: url(../img/icon1.png);
+      top: 10rem;
+      left: 0rem;
+    }
+
+    &_2::after{
+      width: 227px;
+      height: 227px;
+      background-image: url(../img/icon2.png);
+      top: 17rem;
+      right: 2rem;
+    }
+    &_3::after{
+      width: 189px;
+      height: 189px;
+      background-image: url(../img/icon3.png);
+      top: 3rem;
+      left: 2rem;
+    }
+    &_4::after{
+      width: 289px;
+      height: 289px;
+      background-image: url(../img/icon4.png);
+      top: 15rem;
+      right: 2rem;
+    }
+    &_5::after{
+      width: 207px;
+      height: 207px;
+      background-image: url(../img/icon5.png);
+      top: 3rem;
+      left: 2rem;
+    }
+  }
+
+  &__item{
+    display: block;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 40px;
+      height: 1px;
+      border: 1px solid #35D3B7;
+      position: absolute;
+      top: 1.3rem;
+      left: -6rem;
+    }
+  }
+
+  &__text{
+    display: block;
+    width: 67rem;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+    padding-left: 10rem;
+    padding-right: 7rem;
+    text-align: left;
+
+    font-family: Open "Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__line{
+    position: absolute;
+    top: 5rem;
+    left: 76rem;
+  }
+}
